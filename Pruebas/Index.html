@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Validación de formularios</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="Fn.js"></script>
+</head>
+
+<body>
+    <h3 id="titleb">WebDeveloper</h3>
+    <div class="contenedor">
+        <div class="cabecera">
+            <p>Formulario de afiliacion</p>
+        </div>
+        <form id="formulario">
+
+            <div class="form-control">
+                <input type="text" id="nombre" class="form-input" placeholder="Nombre completo">
+            </div>
+
+            <div class="form-control">
+                <input type="email" id="correo" class="form-input" placeholder="Email">
+            </div>
+
+            <div class="form-control">
+                <input type="text" id="gustos" class="form-input">
+                <label for="gustos"><button type="button" onclick="insertarFila()" value="Insertar fila">Gustos</button></label>
+            </div>
+            <div class="table-cotainer">
+                <table id="tblGustos">
+                    <tr>
+                        <th>Gustos</th>
+                        <th>%</th>
+                        <th>Opciones</th>
+                    </tr>
+
+                </table>
+
+                <div id="contenedorForm">
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="Fn.js"></script>
+</body>
+
+</html>
